@@ -101,7 +101,7 @@ class AnimatorSampleActivity : AppCompatActivity() {
       }
     }
 
-    findViewById<View>(R.id.add).setOnClickListener { adapter.add("newly added item", 1) }
+    findViewById<View>(R.id.add).setOnClickListener { adapter.add("newly added item", adapter.itemCount) }
 
     findViewById<View>(R.id.del).setOnClickListener { adapter.remove(1) }
   }
